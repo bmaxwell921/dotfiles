@@ -101,12 +101,9 @@ alias bc='bc -q'
 alias cmix='CMIX'
 alias pycmix='PYCMIX'
 alias rmtmp='find . -name \*~ -delete'
-alias hadooplogin='ssh -i ~/.ssh/hadoop_rsa curtisu@170.224.166.210'
-alias streamlogin='ssh -i ~/.ssh/stream_key curtisu@170.224.160.215'
 alias mk='make'
 alias sub='sublime'
 alias rancow='fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)'
-alias albumbler='python ~/scripts/albumbler.py'
 alias va='vlock -a'
 alias gdb='gdb -q'
 alias pdfcat='gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=output.pdf'
@@ -140,7 +137,3 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-
-#path
-PATH=$PATH:/usr/local/src/RTcmix/bin
-export PATH
